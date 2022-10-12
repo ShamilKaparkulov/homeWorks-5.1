@@ -1,10 +1,10 @@
 import "./CommentUserInfo.css";
 
-function CommentUserInfo(props) {
+function CommentUserInfo({ avatarUrl,name}) {
   return (
     <div className="UserInfo">
-      <img src={props.avatarUrl} alt="img" />
-      <div className="UserInfo-name">{props.name}</div>
+      <img src={avatarUrl} alt="img" />
+      <div className="UserInfo-name">{name}</div>
     </div>
   );
 }

@@ -3,18 +3,21 @@ import CommentDate from "./CommentDate";
 import CommentUserInfo from "./CommentUserInfo";
 import CommentWrapper from "./CommentWrapper";
 
-function Comment(props) {
+function Comment({date,text,author}) {
+
+  
   return (
-    <div>
+    <div >
+    
       <CommentWrapper className="comment-first">
         <CommentUserInfo
-          avatarUrl={props.data.author.avatarUrl}
-          name={props.data.author.name}
+          avatarUrl={author.avatarUrl}
+          name={author.name}
         />
       </CommentWrapper>
 
-        <div className="Comment-text">{props.data.text}
-        <CommentDate date={props.data.date} />
+        <div className="Comment-text">{text}
+        <CommentDate date={date} />
 
         </div>
     </div>

@@ -19,3 +19,7 @@
 .comment-second {
   background-color: pink;
 }
+
+.container {
+  display: flex;
+}
